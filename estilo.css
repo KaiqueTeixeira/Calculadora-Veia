@@ -1,6 +1,21 @@
 /*PÁGINA COMO UM TODO */
+@charset "UTF-8";
+
+:root{
+    --cor0: #422D6B;
+    --cor1: #573C8C;
+    --cor2: #6D4CB0;
+    --cor3: #815BD4;
+    --cor4: #9C6EFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background: rgb(17, 31, 78);
+    background-image: linear-gradient(to right, var(--cor0), var(--cor2), var(--cor3));
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: white;
@@ -12,9 +27,11 @@ header {
     text-align: center;
 }
 
-#titulo {
-    font-size: 50px;
-    margin: 60px;
+header > h1 {
+    font-size: 3em;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.658);
 }
 
 /*QUADRADO BRANCO*/
@@ -26,17 +43,15 @@ section {
     color: black;
     margin: auto;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.87);
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.562);
 }
 
 /*LUGAR DE COLOCAR OS NÚMEROS*/
 
 #botoes {
     text-align: center;
-    margin-top: 5px;
     font-weight: bold;
     font-size: 20px;
-
 }
 
 .tbotao {
@@ -48,22 +63,33 @@ section {
 }
 
 #txtn1 {
-    margin-top: 25px;
+    margin-top: 30px;
+    padding: 3px;
+}
+
+#txtn2{
+    margin-top: 10px;
+    padding: 3px;
 }
 
 /*SELECIONAR AS CONTAS*/
 
 #pbotao {
+    margin-top: 40px;
     text-align: center;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .botao {
     cursor: pointer;
+    margin-left: 20px;
 }
 
-#botaoso {
-    margin-top: 20px;
+/*ESPAÇO ENTRE OS BOTÕES*/
+#dbotao {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /*BOTAO DE VERIFICAR*/
@@ -101,7 +127,6 @@ section {
     background: rgb(38, 147, 190);
     border: none;
     border-radius: 5px;
-    margin-left: 40px;
     cursor: pointer;
 }
 
