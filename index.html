@@ -17,8 +17,19 @@
     <section>
         <div>
             <div id="botoes">
-                <p>Número 1: <input type="number" name="txtn" id="txtn1" class="tbotao"></p>
-                <p>Número 2: <input type="number" name="txtn" id="txtn2" class="tbotao"></p>
+
+                <form action="">
+                    <p>
+                        <label for="txtn1">Número 1: </label>
+                        <input type="number" name="txtn" id="txtn1" class="tbotao" required>
+                    </p>
+                    
+                    <p>
+                        <label for="txtn2">Número 2: </label>
+                        <input type="number" name="txtn" id="txtn2" class="tbotao" required>
+                    </p>
+                </form>
+
             </div>
             <p id="pbotao">
                 <input type="radio" name="botao" id="botaoso" class="botao" checked>
@@ -32,8 +43,8 @@
             </p>
         </div>
         <div id="dbotao">
-            <input type="button" value="Verificar" name="validar" id="validar" onclick="validar()">
-            <input type="button" value="Limpar" name="limpar" id="limpar" onclick="limpar()">
+            <input type="submit" value="Verificar" name="validar" id="validar" onclick="validar()">
+            <input type="reset" value="Limpar" name="limpar" id="limpar" onclick="limpar()">
         </div>
         <div id="dres">
             <p id="res">Preencha os dados acima</p>
